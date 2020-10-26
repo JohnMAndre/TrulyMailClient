@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA17C726-3E36-4FB1-8C73-D89B6C0C0177}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TrulyMail.My.MyApplication</StartupObject>
+    <RootNamespace>TrulyMail</RootNamespace>
+    <AssemblyName>TrulyMail</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Text</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Resources\SecuredmessageIcon.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TrulyMail.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TrulyMail.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DefineConstants>BUILD_AS_PORTABLE=True</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Installer|AnyCPU' ">
+    <OutputPath>bin\Installer\</OutputPath>
+    <NoWarn>
+    </NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>TrulyMail.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\Rule Sets\DeadCode.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>TrulyMail.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Installer|x86' ">
+    <OutputPath>bin\x86\Installer\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <NoWarn>
+    </NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedIntellect.Ssl, Version=2.0.0.5, Culture=neutral, PublicKeyToken=bc571e8da1c1f543, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\AdvancedIntellect.Ssl.dll</HintPath>
+    </Reference>
+    <Reference Include="ApplicationUpdater">
+      <HintPath>..\SupportFiles\ApplicationUpdater.exe</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Common">
+      <HintPath>..\SupportFiles\Argotic.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Core">
+      <HintPath>..\SupportFiles\Argotic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Extensions">
+      <HintPath>..\SupportFiles\Argotic.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="aspNetEmail, Version=3.7.0.0, Culture=neutral, PublicKeyToken=bc571e8da1c1f543">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\aspNetEmail.dll</HintPath>
+    </Reference>
+    <Reference Include="aspNetMime, Version=2.5.2.0, Culture=neutral, PublicKeyToken=bc571e8da1c1f543">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\aspNetMime.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="aspNetPOP3, Version=2.5.2.0, Culture=neutral, PublicKeyToken=bc571e8da1c1f543">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\aspNetPOP3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.2, Version=2.0.20101.19448, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Editor.2, Version=2.0.20101.39, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20101.33244, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1SpellChecker.2, Version=2.0.20101.64, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\C1.Win.C1SpellChecker.2.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\SupportFiles\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HTMLparserLibDotNet20, Version=3.1.4.31970, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\HTMLparserLibDotNet20.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.XmlTransform, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MontgomerySoftware.Controls, Version=2.1.3400.28871, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\MontgomerySoftware.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Core, Version=2.14.0.832, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\NuGet.Core.2.14.0\lib\net40-Client\NuGet.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ObjectListView, Version=2.8.0.24182, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="slimdx, Version=2.0.9.42, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\SlimDX32\slimdx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Speech">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="tmed, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\tmed.dll</HintPath>
+    </Reference>
+    <Reference Include="TrulyMail.Controls">
+      <HintPath>..\SupportFiles\TrulyMail.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="TrulyMail.Cryptography, Version=3.0.3949.20029, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportFiles\TrulyMail.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Classes\AddressBook.vb" />
+    <Compile Include="Classes\CryptographyFunctions.vb" />
+    <Compile Include="Classes\EmailClasses.vb" />
+    <Compile Include="Classes\FolderState.vb" />
+    <Compile Include="Classes\Interfaces\IComposeForm.vb" />
+    <Compile Include="Classes\ListComparers.vb" />
+    <Compile Include="Classes\OLVSupport\AssociatedIcon.vb" />
+    <Compile Include="Classes\AuthenticatedEmailAddress.vb" />
+    <Compile Include="Classes\FilenameLoading\FileListLoader.vb" />
+    <Compile Include="Classes\FilenameLoading\MessageIndex.vb" />
+    <Compile Include="Classes\Interfaces.vb" />
+    <Compile Include="Classes\OLVSupport\OLVFilters.vb" />
+    <Compile Include="Classes\SendAndTransmit\MessageSender.vb" />
+    <Compile Include="Classes\SendAndTransmit\MessageTransmitter.vb" />
+    <Compile Include="Classes\NativeMethods.vb" />
+    <Compile Include="Classes\Quantizer.vb" />
+    <Compile Include="Classes\SmallClasses.vb" />
+    <Compile Include="Classes\Sound\SlimDXRecordSound.vb" />
+    <Compile Include="Classes\Sound\Sound.vb" />
+    <Compile Include="Classes\TrackRectanglePictureBox.vb" />
+    <Compile Include="Classes\TrulyMailMessage.vb" />
+    <Compile Include="Forms\AddressBook\EditContactK.Designer.vb">
+      <DependentUpon>EditContactK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddressBook\EditContactK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AboutBoxK.Designer.vb">
+      <DependentUpon>AboutBoxK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AboutBoxK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\CharacterSelectorForm.Designer.vb">
+      <DependentUpon>CharacterSelectorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\CharacterSelectorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\InsertTableForm.Designer.vb">
+      <DependentUpon>InsertTableForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\InsertTableForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\OpacityNoticeForm.Designer.vb">
+      <DependentUpon>OpacityNoticeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\OpacityNoticeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ScheduleMessagesInOutboxForm.Designer.vb">
+      <DependentUpon>ScheduleMessagesInOutboxForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ScheduleMessagesInOutboxForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\TM2TMEncryptionKeyGenerator.Designer.vb">
+      <DependentUpon>TM2TMEncryptionKeyGenerator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\TM2TMEncryptionKeyGenerator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Email\LimitEmailDownloadK.Designer.vb">
+      <DependentUpon>LimitEmailDownloadK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Email\LimitEmailDownloadK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Managers\LocationFileEncryptionProcess.Designer.vb">
+      <DependentUpon>LocationFileEncryptionProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Managers\LocationFileEncryptionProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Managers\ManageAutoTextSimple.Designer.vb">
+      <DependentUpon>ManageAutoTextSimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Managers\ManageAutoTextSimple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Managers\ManageDoNotSendList.Designer.vb">
+      <DependentUpon>ManageDoNotSendList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Managers\ManageDoNotSendList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageForms\BrowserFullScreenForm.Designer.vb">
+      <DependentUpon>BrowserFullScreenForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageForms\BrowserFullScreenForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DateSelectorK.Designer.vb">
+      <DependentUpon>DateSelectorK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DateSelectorK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DuplicateMessageFinderProgressForm.Designer.vb">
+      <DependentUpon>DuplicateMessageFinderProgressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DuplicateMessageFinderProgressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\FolderBrowserDialogTM.Designer.vb">
+      <DependentUpon>FolderBrowserDialogTM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\FolderBrowserDialogTM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\HTMLEditorK.Designer.vb">
+      <DependentUpon>HTMLEditorK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\HTMLEditorK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\LoginK.Designer.vb">
+      <DependentUpon>LoginK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\LoginK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageForms\NewMessageSimple.Designer.vb">
+      <DependentUpon>NewMessageSimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageForms\NewMessageSimple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrphanedAttachments.Designer.vb">
+      <DependentUpon>OrphanedAttachments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OrphanedAttachments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReceiveMessageLogViewer.Designer.vb">
+      <DependentUpon>ReceiveMessageLogViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReceiveMessageLogViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Managers\SetMasterPasswordK.Designer.vb">
+      <DependentUpon>SetMasterPasswordK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Managers\SetMasterPasswordK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImportExport\ExportMessages.Designer.vb">
+      <DependentUpon>ExportMessages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImportExport\ExportMessages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RSS\RSSDetails.Designer.vb">
+      <DependentUpon>RSSDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RSS\RSSDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RSS\RSSList.Designer.vb">
+      <DependentUpon>RSSList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RSS\RSSList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RSS\RSSSenderRemoteImages.Designer.vb">
+      <DependentUpon>RSSSenderRemoteImages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RSS\RSSSenderRemoteImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Selectors\ContactSelectorForm.Designer.vb">
+      <DependentUpon>ContactSelectorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Selectors\ContactSelectorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Managers\ManageAutoText.Designer.vb">
+      <DependentUpon>ManageAutoText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Managers\ManageAutoText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Email\EncryptedWebmailPasswordSelector.Designer.vb">
+      <DependentUpon>EncryptedWebmailPasswordSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Email\EncryptedWebmailPasswordSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ImageResizePrompt.Designer.vb">
+      <DependentUpon>ImageResizePrompt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ImageResizePrompt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageSelectorForm.Designer.vb">
+      <DependentUpon>MessageSelectorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageSelectorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ServerConnectionTest.Designer.vb">
+      <DependentUpon>ServerConnectionTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ServerConnectionTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Email\AddEmailGuide.Designer.vb">
+      <DependentUpon>AddEmailGuide.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Email\AddEmailGuide.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProcessingRules\EditProcessingRuleForm.Designer.vb">
+      <DependentUpon>EditProcessingRuleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProcessingRules\EditProcessingRuleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProcessingRules\ProcessRulesForm.Designer.vb">
+      <DependentUpon>ProcessRulesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProcessingRules\ProcessRulesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\AudioPlayerAlt.vb" />
+    <Compile Include="Modules\BatchRoutines.vb" />
+    <Compile Include="Modules\EmailSupport.vb" />
+    <Compile Include="Modules\HtmlAgilityPackWrapper.vb" />
+    <Compile Include="Modules\ProcessingRuleSupport.vb" />
+    <Compile Include="Modules\AddressBookSupport.vb" />
+    <Compile Include="Modules\Crypto.vb" />
+    <Compile Include="Modules\GlobalConstants.vb" />
+    <Compile Include="Modules\GlobalEnums.vb" />
+    <Compile Include="Modules\ImagingSupport.vb" />
+    <Compile Include="Modules\AutoTextSupport.vb" />
+    <Compile Include="Modules\RSSSupport.vb" />
+    <Compile Include="UserControls\AudioPlayer.Designer.vb">
+      <DependentUpon>AudioPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AudioPlayer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactPictureDisplay.Designer.vb">
+      <DependentUpon>ContactPictureDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ContactPictureDisplay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactSelector.Designer.vb">
+      <DependentUpon>ContactSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ContactSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactSelectorPlain.Designer.vb">
+      <DependentUpon>ContactSelectorPlain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ContactSelectorPlain.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NullableDateTimePicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\OnScreenRandomKeyboard.Designer.vb">
+      <DependentUpon>OnScreenRandomKeyboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OnScreenRandomKeyboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\OLVSupport\CustomRenderers.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Countries.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Countries.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ApplicationSettings.vb" />
+    <Compile Include="Forms\AddressBook\AddressBookForm.Designer.vb">
+      <DependentUpon>AddressBookForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddressBook\AddressBookForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AutoCloseMessageBox.Designer.vb">
+      <DependentUpon>AutoCloseMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AutoCloseMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\RTFForm.Designer.vb">
+      <DependentUpon>RTFForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\RTFForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Email\AccountList.Designer.vb">
+      <DependentUpon>AccountList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Email\AccountList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Email\NewAccount.Designer.vb">
+      <DependentUpon>NewAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Email\NewAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Selectors\RemoteImagesSelector.Designer.vb">
+      <DependentUpon>RemoteImagesSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Selectors\RemoteImagesSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddressBook\ImportAddressBook.Designer.vb">
+      <DependentUpon>ImportAddressBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddressBook\ImportAddressBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\InputBox.Designer.vb">
+      <DependentUpon>InputBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\InputBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListViewForm.Designer.vb">
+      <DependentUpon>ListViewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListViewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\NotifyForm.Designer.vb">
+      <DependentUpon>NotifyForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\NotifyForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageForms\ReadMessage2.Designer.vb">
+      <DependentUpon>ReadMessage2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageForms\ReadMessage2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchForm.Designer.vb">
+      <DependentUpon>SearchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SearchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SendToSupport.Designer.vb">
+      <DependentUpon>SendToSupport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SendToSupport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Conversion.vb" />
+    <Compile Include="Modules\Globals.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\MessageForms\NewMessage.Designer.vb">
+      <DependentUpon>NewMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageForms\NewMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OptionsForm.Designer.vb">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OptionsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReadMessage7Control.Designer.vb">
+      <DependentUpon>ReadMessage7Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReadMessage7Control.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReadMessageControl.Designer.vb">
+      <DependentUpon>ReadMessageControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReadMessageControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Countries.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Countries.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddressBook\EditContactK.resx">
+      <DependentUpon>EditContactK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\CharacterSelectorForm.resx">
+      <DependentUpon>CharacterSelectorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\InsertTableForm.resx">
+      <DependentUpon>InsertTableForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\OpacityNoticeForm.resx">
+      <DependentUpon>OpacityNoticeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ScheduleMessagesInOutboxForm.resx">
+      <DependentUpon>ScheduleMessagesInOutboxForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\TM2TMEncryptionKeyGenerator.resx">
+      <DependentUpon>TM2TMEncryptionKeyGenerator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Email\LimitEmailDownloadK.resx">
+      <DependentUpon>LimitEmailDownloadK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Managers\LocationFileEncryptionProcess.resx">
+      <DependentUpon>LocationFileEncryptionProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Managers\ManageAutoTextSimple.resx">
+      <DependentUpon>ManageAutoTextSimple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Managers\ManageDoNotSendList.resx">
+      <DependentUpon>ManageDoNotSendList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageForms\BrowserFullScreenForm.resx">
+      <DependentUpon>BrowserFullScreenForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\DuplicateMessageFinderProgressForm.resx">
+      <DependentUpon>DuplicateMessageFinderProgressForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Managers\SetMasterPasswordK.resx">
+      <DependentUpon>SetMasterPasswordK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageForms\NewMessageSimple.resx">
+      <DependentUpon>NewMessageSimple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OrphanedAttachments.resx">
+      <DependentUpon>OrphanedAttachments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReceiveMessageLogViewer.resx">
+      <DependentUpon>ReceiveMessageLogViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddressBook\AddressBookForm.resx">
+      <DependentUpon>AddressBookForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\AboutBoxK.resx">
+      <DependentUpon>AboutBoxK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\AutoCloseMessageBox.resx">
+      <DependentUpon>AutoCloseMessageBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\DateSelectorK.resx">
+      <DependentUpon>DateSelectorK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\FolderBrowserDialogTM.resx">
+      <DependentUpon>FolderBrowserDialogTM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\HTMLEditorK.resx">
+      <DependentUpon>HTMLEditorK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\LoginK.resx">
+      <DependentUpon>LoginK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImportExport\ExportMessages.resx">
+      <DependentUpon>ExportMessages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RSS\RSSDetails.resx">
+      <DependentUpon>RSSDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RSS\RSSList.resx">
+      <DependentUpon>RSSList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RSS\RSSSenderRemoteImages.resx">
+      <DependentUpon>RSSSenderRemoteImages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Selectors\ContactSelectorForm.resx">
+      <DependentUpon>ContactSelectorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Managers\ManageAutoText.resx">
+      <DependentUpon>ManageAutoText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Email\EncryptedWebmailPasswordSelector.resx">
+      <DependentUpon>EncryptedWebmailPasswordSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ImageResizePrompt.resx">
+      <DependentUpon>ImageResizePrompt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageSelectorForm.resx">
+      <DependentUpon>MessageSelectorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\NotifyForm.resx">
+      <DependentUpon>NotifyForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\RTFForm.resx">
+      <DependentUpon>RTFForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ServerConnectionTest.resx">
+      <DependentUpon>ServerConnectionTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Email\AccountList.resx">
+      <DependentUpon>AccountList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Email\AddEmailGuide.resx">
+      <DependentUpon>AddEmailGuide.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Email\NewAccount.resx">
+      <DependentUpon>NewAccount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Selectors\RemoteImagesSelector.resx">
+      <DependentUpon>RemoteImagesSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddressBook\ImportAddressBook.resx">
+      <DependentUpon>ImportAddressBook.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\InputBox.resx">
+      <DependentUpon>InputBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListViewForm.resx">
+      <DependentUpon>ListViewForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProcessingRules\EditProcessingRuleForm.resx">
+      <DependentUpon>EditProcessingRuleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProcessingRules\ProcessRulesForm.resx">
+      <DependentUpon>ProcessRulesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchForm.resx">
+      <DependentUpon>SearchForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SendToSupport.resx">
+      <DependentUpon>SendToSupport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageForms\NewMessage.resx">
+      <DependentUpon>NewMessage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsForm.resx">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AudioPlayer.resx">
+      <DependentUpon>AudioPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ContactPictureDisplay.resx">
+      <DependentUpon>ContactPictureDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ContactSelector.resx">
+      <DependentUpon>ContactSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ContactSelectorPlain.resx">
+      <DependentUpon>ContactSelectorPlain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OnScreenRandomKeyboard.resx">
+      <DependentUpon>OnScreenRandomKeyboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ReadMessage7Control.resx">
+      <DependentUpon>ReadMessage7Control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ReadMessageControl.resx">
+      <DependentUpon>ReadMessageControl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\aspnetemail.xml.lic" />
+    <None Include="Resources\EncryptionKeyRTF.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\addressbook_32.bmp" />
+    <Content Include="Images\checkboxes_16.bmp" />
+    <Content Include="Images\newmessage_32.bmp" />
+    <None Include="Resources\sendmaildelay_16.png" />
+    <None Include="Resources\sendmaildelay_32.png" />
+    <None Include="Resources\paste2_16.png" />
+    <None Include="Resources\paste2_32.png" />
+    <None Include="Resources\Numbering_small.png" />
+    <None Include="Resources\Bullets_small.png" />
+    <None Include="Resources\AnimalsMouse.png" />
+    <None Include="Resources\FoodAvocado.png" />
+    <None Include="Resources\FeelingsHeart.png" />
+    <None Include="Resources\NatureMoon.png" />
+    <None Include="Resources\ActionPiano.png" />
+    <None Include="Resources\OtherMoney.png" />
+    <None Include="Resources\PeopleSmile.png" />
+    <None Include="Resources\securedmessage_48.png" />
+    <None Include="Resources\erase_trans_16.png" />
+    <None Include="Resources\checkmark_trans_16.png" />
+    <None Include="Resources\download_trans_16.png" />
+    <None Include="Resources\checkmark_16.png" />
+    <None Include="Resources\Happy_20.png" />
+    <None Include="Resources\HeartSmiley_32.png" />
+    <None Include="Resources\HeartSmiley_16.png" />
+    <None Include="Resources\activateButton_128.png" />
+    <None Include="Resources\cancelButton_128.png" />
+    <None Include="Resources\sendmail_32.png" />
+    <None Include="Resources\Question.png" />
+    <None Include="Resources\ballyellow_16.png" />
+    <None Include="Resources\Grid480.png" />
+    <None Include="Resources\Grid_240.png" />
+    <None Include="Resources\add-icon_32.png" />
+    <None Include="Resources\add-icon_16.png" />
+    <None Include="Resources\BlueArrowDown_32.png" />
+    <None Include="Resources\BlueArrowUp_32.png" />
+    <None Include="Resources\Sender_Good_32.png" />
+    <None Include="Resources\Unlock_16.png" />
+    <None Include="Resources\Unlock_32.png" />
+    <None Include="Resources\ShowRemoteImageURLs_32.png" />
+    <None Include="Resources\searchmessage_16.png" />
+    <None Include="Resources\searchmessage_32.png" />
+    <None Include="Resources\info_16.png" />
+    <None Include="Resources\info_32.png" />
+    <None Include="Resources\HighlightSubject2_32.png" />
+    <None Include="Resources\HighlightSubject2_16.png" />
+    <None Include="Resources\HighlightSender2_32.png" />
+    <None Include="Resources\HighlightSender2_16.png" />
+    <None Include="Resources\HighlightNothing_32.png" />
+    <None Include="Resources\HighlightNothing_16.png" />
+    <None Include="Resources\Arrow_right_16.png" />
+    <None Include="Resources\earth_32.png" />
+    <None Include="Resources\earth_16.png" />
+    <None Include="Resources\twitter_32.png" />
+    <None Include="Resources\twitter_16.png" />
+    <None Include="Resources\Text_32.png" />
+    <None Include="Resources\Text_16.png" />
+    <None Include="Resources\Arrow_left_16.png" />
+    <None Include="Resources\aspnetemail.xml.lic.txt" />
+    <None Include="Resources\network_32.png" />
+    <None Include="Resources\network_16.png" />
+    <None Include="Resources\folder-closed-yellow_24.png" />
+    <None Include="Resources\folder-closed-red_24.png" />
+    <None Include="Resources\folder-closed-purple_24.png" />
+    <None Include="Resources\folder-closed-orange_24.png" />
+    <None Include="Resources\folder-closed-green_24.png" />
+    <None Include="Resources\folder-closed-blue_24.png" />
+    <None Include="Resources\Securedmessage_16.png" />
+    <None Include="Resources\Securedmessage_32.png" />
+    <None Include="Resources\Erase_16.png" />
+    <None Include="Resources\Editpencil_16.png" />
+    <None Include="Resources\rss_32.png" />
+    <None Include="Resources\rss_16.png" />
+    <None Include="Resources\AutoText_32.png" />
+    <None Include="Resources\AutoText_16.png" />
+    <None Include="Resources\simpleX_16.png" />
+    <None Include="Resources\email_32.png" />
+    <None Include="Resources\email_16.png" />
+    <None Include="Resources\secured_email_16.png" />
+    <None Include="Resources\secured_email_32.png" />
+    <None Include="Resources\redemail_16.png" />
+    <None Include="Resources\redemail_32.png" />
+    <None Include="Resources\reply_all_3_16.png" />
+    <None Include="Resources\reply_3_16.png" />
+    <None Include="Resources\Forward_3_16.png" />
+    <None Include="Resources\reply_3_32.png" />
+    <None Include="Resources\reply_all_3_32.png" />
+    <None Include="Resources\Forward_3_32.png" />
+    <None Include="Resources\keyboard_white.jpg" />
+    <None Include="Resources\close_cold_16.png" />
+    <None Include="Resources\close_hot_16.png" />
+    <None Include="Resources\close_16.png" />
+    <None Include="Resources\plus_9.png" />
+    <None Include="Resources\minus_9.png" />
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\MsgReply_16.png" />
+    <None Include="Resources\MsgForward_32.png" />
+    <None Include="Resources\MsgReply_32.png" />
+    <None Include="Resources\MsgReplyAll_32.png" />
+    <None Include="Resources\MsgForward_16.png" />
+    <None Include="Resources\MsgReplyAll_16.png" />
+    <None Include="Resources\ReplyMessage_16.png" />
+    <None Include="Resources\ReplyAllMessage_32.png" />
+    <None Include="Resources\ReplyAllMessage_16.png" />
+    <None Include="Resources\ForwardMessage_32.png" />
+    <None Include="Resources\ForwardMessage_16.png" />
+    <None Include="Resources\ReplyMessage_32.png" />
+    <None Include="Resources\redemail_32.bmp" />
+    <None Include="Resources\redemail_16.bmp" />
+    <None Include="Resources\SpellAsYouType_32.png" />
+    <None Include="Resources\SpellAsType32.png" />
+    <None Include="Resources\spell-as-you-type.png" />
+    <None Include="Resources\NoImage.png" />
+    <None Include="Resources\NoPhoto.png" />
+    <None Include="Resources\profile_male.png" />
+    <None Include="Resources\profile_female.png" />
+    <None Include="Resources\BallRed_16.png" />
+    <None Include="Resources\BallGreen_16.png" />
+    <None Include="Resources\Calendar_32.png" />
+    <None Include="Resources\Calendar_16.png" />
+    <None Include="Resources\ResumeButton_32.png" />
+    <None Include="Resources\ResumeButton_16.png" />
+    <None Include="Resources\PlayButton_32.png" />
+    <None Include="Resources\PlayButton_16.png" />
+    <None Include="Resources\PauseButton_32.png" />
+    <None Include="Resources\PauseButton_16.png" />
+    <None Include="Resources\StopButton_24.png" />
+    <None Include="Resources\RecordButton_24.png" />
+    <None Include="Resources\ResumeButton32.png" />
+    <None Include="Resources\PlayButton32.png" />
+    <None Include="Resources\PlayAllButton32.png" />
+    <None Include="Resources\PauseButton32.png" />
+    <None Include="Resources\secured_email_32.bmp" />
+    <None Include="Resources\Secured_email_16.bmp" />
+    <EmbeddedResource Include="Forms\MessageForms\ReadMessage2.resx">
+      <DependentUpon>ReadMessage2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ReadMessage.ico" />
+    <None Include="Resources\add-icon_48.png" />
+    <None Include="Resources\remove-icon_48.png" />
+    <None Include="Resources\AddUser_32.bmp" />
+    <None Include="Resources\AddUser_16.bmp" />
+    <None Include="Resources\LanguageList.txt" />
+    <None Include="Resources\CountryList.txt" />
+    <None Include="Resources\BCC_Hot_16.png" />
+    <None Include="Resources\To_Hot_16.png" />
+    <None Include="Resources\CC_Hot_16.png" />
+    <None Include="Resources\Note_16.bmp" />
+    <None Include="Resources\Note_32.bmp" />
+    <None Include="Resources\CheckMark_16.bmp" />
+    <None Include="Resources\CheckMark_32.bmp" />
+    <None Include="Resources\Postman_16.bmp" />
+    <None Include="Resources\Postman_32.bmp" />
+    <None Include="Resources\MessageCopy_16.bmp" />
+    <None Include="Resources\MessageCopy_32.bmp" />
+    <None Include="Resources\clock_16.bmp" />
+    <None Include="Resources\Paste_16.bmp" />
+    <None Include="Resources\Copy_16.bmp" />
+    <None Include="Resources\Cut_16.bmp" />
+    <None Include="Resources\SecuredmessageIcon.ico" />
+    <EmbeddedResource Include="Resources\MessageIcon.ico" />
+    <None Include="Resources\Newmessage_32.bmp" />
+    <None Include="Resources\Openmessage_16.bmp" />
+    <None Include="Resources\Openmessage_32.bmp" />
+    <None Include="Resources\Postagestamp_16.bmp" />
+    <None Include="Resources\Postagestamp_32.bmp" />
+    <None Include="Resources\Print_16.bmp" />
+    <None Include="Resources\Print_32.bmp" />
+    <None Include="Resources\Readmessage_16.bmp" />
+    <None Include="Resources\Readmessage_32.bmp" />
+    <None Include="Resources\Refresh_16.bmp" />
+    <None Include="Resources\Refresh_32.bmp" />
+    <None Include="Resources\Reply_16.bmp" />
+    <None Include="Resources\Reply_32.bmp" />
+    <None Include="Resources\Replytoall_16.bmp" />
+    <None Include="Resources\Replytoall_32.bmp" />
+    <None Include="Resources\Savefile_16.bmp" />
+    <None Include="Resources\Savefile_32.bmp" />
+    <None Include="Resources\Search_16.bmp" />
+    <None Include="Resources\Search_32.bmp" />
+    <None Include="Resources\Searchmessage_16.bmp" />
+    <None Include="Resources\Searchmessage_32.bmp" />
+    <None Include="Resources\Securedmessage_16.bmp" />
+    <None Include="Resources\Securedmessage_32.bmp" />
+    <None Include="Resources\Sendmail_16.bmp" />
+    <None Include="Resources\Sendmail_32.bmp" />
+    <None Include="Resources\Settings_16.bmp" />
+    <None Include="Resources\Settings_32.bmp" />
+    <None Include="Resources\Spellcheck_16.bmp" />
+    <None Include="Resources\Spellcheck_32.bmp" />
+    <None Include="Resources\Stop_16.bmp" />
+    <None Include="Resources\Stop_32.bmp" />
+    <None Include="Resources\Synchronize_16.bmp" />
+    <None Include="Resources\Synchronize_32.bmp" />
+    <None Include="Resources\Upload_16.bmp" />
+    <None Include="Resources\Upload_32.bmp" />
+    <None Include="Resources\Userprofile_16.bmp" />
+    <None Include="Resources\Userprofile_32.bmp" />
+    <None Include="Resources\BCC_16.png" />
+    <None Include="Resources\To_16.png" />
+    <None Include="Resources\CC_16.png" />
+    <None Include="Resources\Addressbook_16.bmp" />
+    <None Include="Resources\Addressbook_32.bmp" />
+    <None Include="Resources\Attach_16.bmp" />
+    <None Include="Resources\Attach_32.bmp" />
+    <None Include="Resources\Checkboxes_16.bmp" />
+    <None Include="Resources\Checkboxes_32.bmp" />
+    <None Include="Resources\Deletemessage_16.bmp" />
+    <None Include="Resources\Deletemessage_32.bmp" />
+    <None Include="Resources\Download_16.bmp" />
+    <None Include="Resources\Download_32.bmp" />
+    <None Include="Resources\Editmessage_16.bmp" />
+    <None Include="Resources\Editmessage_32.bmp" />
+    <None Include="Resources\Editpencil_16.bmp" />
+    <None Include="Resources\Editpencil_32.bmp" />
+    <None Include="Resources\email_16.bmp" />
+    <None Include="Resources\email_32.bmp" />
+    <None Include="Resources\Emptytrashcan_16.bmp" />
+    <None Include="Resources\Emptytrashcan_32.bmp" />
+    <None Include="Resources\Erase_16.bmp" />
+    <None Include="Resources\Erase_32.bmp" />
+    <None Include="Resources\Forward_16.bmp" />
+    <None Include="Resources\Forward_32.bmp" />
+    <None Include="Resources\Fulltrashcan_16.bmp" />
+    <None Include="Resources\Fulltrashcan_32.bmp" />
+    <None Include="Resources\Getmail_16.bmp" />
+    <None Include="Resources\Getmail_32.bmp" />
+    <None Include="Resources\Message_16.bmp" />
+    <None Include="Resources\Message_32.bmp" />
+    <None Include="Resources\messageforward_16.png" />
+    <None Include="Resources\messagereply_16.jpg" />
+    <None Include="Resources\messagereplyforward_16.png" />
+    <None Include="Resources\NewEmail_16.png" />
+    <None Include="Resources\Newmessage_16.bmp" />
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\ToDelete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrulyMailCSharpSupport\TrulyMailCSharpSupport.csproj">
+      <Project>{3f46d1de-89fe-4c7c-892e-246824916a3d}</Project>
+      <Name>TrulyMailCSharpSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

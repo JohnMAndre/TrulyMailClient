@@ -1,0 +1,85 @@
+﻿<Message Received="2016-01-01T10:00:00.000" SentDate="2016-01-01T10:00:00.000" MessageID="7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c" POPAccount="00000000-0000-0000-0000-000000000000" MessageTypeID="dcc232ee-4b59-4742-9b72-c667cc235702" SenderFullName="TrulyMail Support" SenderAddress="Support@TrulyMail.com" Read="False" MessageSize="573254"  Importance="3" >
+  <Recipients>
+    <Recipient RoleID="e9688fad-d3ff-405e-aa11-1761de0834e6" Address="" />
+  </Recipients>
+  <Subject>Getting Started Using TrulyMail</Subject>
+  <Body>
+    &lt;body style="BACKGROUND-COLOR: rgb(255,233,187); font-size:large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"&gt;
+    &lt;h1&gt;Welcome to TrulyMail&lt;/h1&gt;
+    &lt;p&gt;TrulyMail is a very feature-rich email client. The best ways to learn how to make the most of TrulyMail is to look around the menus and toolbars of the different windows.&lt;/p&gt;
+    &lt;p&gt;There are also &lt;a href="http://trulymail.com/Videos"&gt;training videos&lt;/a&gt; you can watch online.&lt;/p&gt;
+    &lt;p&gt;Here are just a few things TrulyMail can do to get you started:&lt;/p&gt;
+    &lt;p&gt;
+    You can turn on the message preview pane by using the View -&gt; Message Preview menu. You can choose to have the message preview pane to be on the bottom of the window (vertical) or on the left (horizontal).
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/MessagePreview.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    You might notice that the contact list in the lower left of the main window is empty. If you select this message, you should also be able to see link above the contact list which says "Add TrulyMail Support to address book."
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/QuickAddContact.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    After you click that link and you should see TrulyMail Support appear in your contact list.
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/ContactAdded.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    TrulyMail includes the ability to automatically add text when you are composing messages. This is useful for signatures or anything else which you want to add often.
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/AutoText1.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    TrulyMail comes with one AutoText already created for you and that is set to automatically be added to all new messages. If you do not want this, you can simply uncheck the box and click the save button.
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/AutoText2.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;If you really like TrulyMail, you can upgrade to TrulyMail Premium for a very small amount. With TrulyMail Premium, you will gain access to these additional features:&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;Priority email support&lt;/li&gt;
+    &lt;li&gt;Extract attachments from multiple messages at once (useful for Project Managers, Teachers, and anyone else who receives lots of attachments)&lt;/li&gt;
+    &lt;li&gt;Have TrulyMail manage your "Do not send" list so you do not accidentally send email to addresses you want to block&lt;/li&gt;
+    &lt;li&gt;Send encrypted email messages to other TrulyMail users (even the subject is encrypted, unlike other email encryption programs)&lt;/li&gt;
+    &lt;li&gt;Send newsletters (send similar message to multiple contacts as individual messages, using replacement text)&lt;/li&gt;
+    &lt;li&gt;Be able to quickly match other messages from same contact or with the same subject/thread topic&lt;/li&gt;
+    &lt;li&gt;Include special characters (like ♥ ☺ ♫ ᴥ © ® ™ ☆) into the subject line easily&lt;/li&gt;
+    &lt;li&gt;Have TrulyMail read aloud to you the message you are composing, before you send it&lt;/li&gt;
+    &lt;li&gt;...and many more features...&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;
+    If you want to upgrade to TrulyMail Premium, just go to &lt;a href="http://trulymail.com/shop/"&gt;TrulyMail.com/shop&lt;/a&gt; or choose the Help menu and click on Upgrade.
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/Upgrade.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    Please continue to explore TrulyMail. You might start with the Options window.
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/Options1.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    Here you can change the language of the dictionary used for spell-check.
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/Options2.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    If you do not see the language you want here, you might be able to download by choosing the Tools menu and clicking Manage Dictionaries.
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/Dictionaries.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    Explore the rest of the tabs in the option form to learn even more.
+    &lt;br /&gt;
+    &lt;img alt="" hspace="0" src="{[ATTACHMENTSFOLDER]}7c34ab37-71dd-4f5b-bbaa-db4fb935fa6c/Images/Options3.png" align="bottom" border="0" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;If you have any questions, comments, or suggestions, we do hope you will email us at &lt;a href="mailto:support@TrulyMail.com"&gt;support@trulymail.com.&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&#160;&lt;/p&gt;
+    &lt;p&gt;&#160;&lt;/p&gt;
+    &lt;p&gt;&#160;&lt;/p&gt;
+    &lt;p&gt;&#160;&lt;/p&gt;
+    &lt;p&gt;&#160;&lt;/p&gt;
+
+    &lt;/body&gt;
+
+  </Body>
+</Message>
