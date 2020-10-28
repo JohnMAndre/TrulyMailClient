@@ -880,6 +880,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ExtraResources\TrulyMail.Controls.dll" />
+    <Content Include="ExtraResources\TrulyMail.Controls.pdb" />
     <Content Include="Images\addressbook_32.bmp" />
     <Content Include="Images\checkboxes_16.bmp" />
     <Content Include="Images\newmessage_32.bmp" />
