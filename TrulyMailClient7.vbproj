@@ -125,9 +125,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\SupportFiles\AdvancedIntellect.Ssl.dll</HintPath>
     </Reference>
-    <Reference Include="ApplicationUpdater">
-      <HintPath>..\SupportFiles\ApplicationUpdater.exe</HintPath>
-    </Reference>
     <Reference Include="Argotic.Common">
       <HintPath>..\SupportFiles\Argotic.Common.dll</HintPath>
     </Reference>
